@@ -1,0 +1,762 @@
+/* Third party libraries */
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+/***************************/
+/*-- Apply to all pages --*/
+/*************************/
+
+*{
+    margin: 3;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************************/
+/* Nav Bar & Search Bar */
+/***********************/
+
+/* Nav Bar */
+nav{    
+    background-color: #696969;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.logo{
+    background-color: #696969;
+    width: 200px;
+    margin: 0px 0px 0px 50px;
+}
+
+.navlinks{
+    background-color: #696969;
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    margin: 0px 50px 0px 0px;
+}
+
+.navlinks i{
+    background-color: #696969;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.navlinks ul{
+    background-color: #696969;
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.navlinks ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+    border-bottom: 2px solid #adbce6;
+	border-radius: 3px;
+}
+
+.navlinks li a:hover{
+    color:#059284;
+    border-bottom: 2px solid red;
+}
+
+.navlinks li a{
+    background-color: #696969;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navlinks i{
+    color: white;
+}
+
+/* Search Bar */
+.search-box{
+    position: relative;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    background: #e8f4f8;
+    height: 60px;
+    border-radius: 0px;
+    padding: 10px;
+    transition: ease-in-out 0.8s;
+
+}
+
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 22px;
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+}
+
+.search-btn{
+    color: #e84118;
+    width: 40px;
+    margin: -40px 0px 0px 250px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 240px;
+}
+
+
+/**************/
+/*-- Footer --*/
+/**************/
+
+footer{
+    background: #c1e1ec;
+    font-family: "Open Sans", sans-serif;
+    padding: 90px 0;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.nlogo{
+    width: 180px;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.social-media a:hover{
+    color: red;
+}
+
+.right-col h1{
+    font-size: 26px;
+}
+
+.border{
+    width: 500px;
+    height: 4px;
+    background: #fc5c65;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.nbtn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity.3s linear;
+}
+
+.nbtn:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width:960px){
+    .footer-container{
+        max-width: 600px;
+    }
+
+    .right-col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .left-col{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*****************/
+/*-- Home Page --*/
+/*****************/
+
+p{
+    color: #555;
+}
+
+.container-shop{
+    background-color: white;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-text{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 0px;
+}
+
+.container-text img{
+    width: 65%;
+    padding: 100px 0px;
+    margin: 10px 60px 0px -70px;
+    transition: linear 0.6s;
+}
+
+.container-text h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 15px 0;
+}
+
+.container-text p{
+    text-align: center;
+}
+
+.discoverBtn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+
+.discoverBtn:hover{
+    opacity: 0.7;
+}
+
+/* Features of website */
+.feature {
+    position: relative;
+}
+
+.feature .feature-col {
+    margin-bottom: 30px;
+}
+
+.feature .feature-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.feature .feature-content i {
+    color: #FF6F61;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.feature .feature-content h2 {
+    font-size: 18px;
+}
+
+.feature .feature-content p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Recommended products */
+.col-3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 100px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.featuredtitle{
+    text-align: center;
+    margin: 50px auto 50px;
+    border-bottom: 2px solid #7D3C98;
+    border-radius: 5px;
+    width: 250px;
+    transform: translateX(0%);
+
+}
+
+.col-3 h4{
+    color: #555;
+    font-weight: none;
+    font-size: 16px;
+}
+
+.col-3 p{
+    font-size: 15px;
+}
+
+/*********************/
+/*-- Products Page --*/
+/*********************/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titleProduct{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-size: 30px;
+}
+
+.titleProduct::after{
+    content: '';
+    background: red;
+    width: 285px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px 20px;
+    min-width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    cursor: pointer;
+    width: 100%;
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/***********/
+/*-- CMS --*/
+/***********/
+
+/* CMS Home Page */
+.cmsnav{
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+}
+
+.cmsnav i{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.cmsnav ul{
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.cmsnav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cmsnav li a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+.cmsnav li a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+/* CMS Page*/
+.list, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+}
+ 
+.list{
+    width: 100%;
+}
+
+/*********************/
+/*-- Contact Page --**/
+/*********************/
+
+.contact{
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.contactTitle{
+    width: 100%;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    color: #322;
+    font-size: 35px;
+    font-family: "Open Sans",sans-serif;
+}
+  
+.contact-info, .contact-form{
+    flex: 1;
+}
+  
+.item{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #322;
+}
+  
+.icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #3494db;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+  
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.contactText, .contactEmail{
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: #B0DFE5;
+    border: none;
+    color: black;
+    margin-bottom: 20px;
+}
+  
+.contactTextarea{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #B0DFE5;
+    border: none;
+    color: black;
+    margin-bottom: 20px;
+}
+  
+.contactBtn{
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #3494db;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #7EF9FF;
+    transition: .3s linear;
+    cursor: pointer;
+}
+  
+.contactBtn:hover{
+    background-color: transparent;
+    color: #3494db;
+}
+  
+/******************/
+/*-- Login Page --*/
+/******************/
+
+.loginbg{
+    font-family: 'Aerial',sans-serif;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+}
+
+.loginText, .loginBox{
+    margin-top: 35vh;
+    flex: 2.5;
+}
+
+.loginText{
+    margin-left: 10%;
+    font-weight: 300px;
+	
+}
+
+.loginBox{
+    margin-left: 25%;
+}
+
+.loginText h1{
+    font-size: 70px;
+    color: black;
+    font-weight: 500;
+}
+
+.loginText p{
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+}
+
+.loginText p a{
+    color: blue;
+    font-weight: 700;
+}
+
+.signuplink{
+    cursor:pointer;
+    text-decoration: none;   
+}
+
+.signuplink:hover{
+    opacity: 0.4;
+}
+
+.loginForm{
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.loginName, .loginPass{
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    border: black;
+    color:black;
+    font-family: 'Copperplate', fantasy;
+}
+
+.loginButton{
+    background: transparent;
+    border: 1px solid brown;
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    color:black;
+    font-family: 'Copperplate', fantasy;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    background: white;
+    color:blue ;
+}
+  
+/********************/
+/*-- Sign Up Page --*/
+/********************/
+
+.container-regis {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	width: 400px;
+    margin: 2% auto;
+    align-items: center;
+	justify-content: center;
+}
+
+.header-regis {
+	border-bottom: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+    margin: 0;
+	font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+	padding: 1px;
+    text-align: center;
+}
+
+.form {
+	padding: 15px 30px;	
+}
+
+.form button {
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+    cursor: pointer;
+}
+
+.form button:hover{
+	background-color: #414eed;
+	transition: 0.4s ease;	
+}
+
+.form-regis {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-regis label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-regis input {
+    font-family: sans-serif;
+	border: 2px solid #f0f0f0;
+	border-radius: 6px;
+	display: block;
+	font-size: 14px;
+	padding: 6px;
+	width: 95%;
+}
+
+.form-regis input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-regis.success input {
+	border-color: #2ecc71;
+}
+
+.form-regis.error input {
+	border-color: #e74c3c;
+}
+
+.form-regis i {
+	visibility: hidden;
+	position: absolute;
+	top: 32px;
+	left: 300px;
+}
+
+.form-regis.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-regis.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-regis.error span {
+	color: #e74c3c;
+    font-size: 14px;
+	position: absolute;
+    visibility: visible;
+}
+
+.form-regis.success span {
+    visibility: hidden;
+    position: absolute;
+
+}
+
+
+
+
+
+

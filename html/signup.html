@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>myStore - Sign Up </title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+
+    <body bgcolor="#e8f4f8">
+
+        <!-- js for validating the inputs -->
+        <script type="text/javascript" src="../js/registrationScript.js"></script>
+
+        <!-- Navigation Bar for Website -->
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+
+            <div class="navlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>      
+            </div>
+        </nav>
+
+        <!-- Registration container -->
+        <div class="container-regis">
+            
+            <!-- Header of registration -->
+            <div class="header-regis">
+                <h2>Sign Up</h2>
+            </div>
+            
+            <!-- Form -->
+            <form name="form" class="form" id="form" action="login.php" onsubmit="return validation()" method="GET">
+                
+                <!-- Name field -->
+                <div class="form-regis" id="formregis0">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="" id="name" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>   <!-- Bootstrap icon -->
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage0" class="errormessage"> </span>
+                </div>
+
+                <!-- Username field -->
+                <div class="form-regis" id="formregis1">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="" id="username" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>   <!-- Bootstrap icon -->
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage1" class="errormessage"> </span>
+                </div>
+                
+                <!-- Email field -->
+                <div class="form-regis" id="formregis2">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="" id="email" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage2" class="errormessage"> </span>
+                </div>
+                
+                <!-- Address field -->
+                <div class="form-regis" id="formregis3">
+                    <label for="address">Country</label>
+                    <input type="text" placeholder="" id="address" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage3" class="errormessage"> </span>
+                </div>
+
+                <!-- PhoneNumber field -->
+                <div class="form-regis" id="formregis31">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" placeholder="" id="address" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage31" class="errormessage"> </span>
+                </div>
+                
+                <!-- Password field -->
+                <div class="form-regis" id="formregis4">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="" id="password" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage4" class="errormessage"> </span>
+                </div>
+                
+                <!-- Confirm Password field -->
+                <div class="form-regis" id="formregis5">
+                    <label for="conpassword">Confirm Password</label>
+                    <input type="password" placeholder="" id="conpassword" autocomplete="off"/>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span id="errormessage5" class="errormessage"> </span>
+                </div>
+                
+                <!-- Submit button -->
+                <button type="submit" name="submit" value="submit">Submit</button>
+                
+            </form>
+            
+        </div>
+       
+    </body>
+
+</html>
+
